@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PaintingList from "./components/PaintingList";
+// import Panel from "./components/Panel";
+import paintings from "./datajson/paintings.json";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Panel title="Последние новости">
+        <p>fdgdfgfhfghjhjkhjkjhkhjkh</p>
+        <a href="">Читать...</a>
+      </Panel>
+
+      <Panel>
+        <p>fdgdfgfhfghjhjkhjkjhkhjkh</p>
+      </Panel>
+
+      <h1>Главный компонент-контейнер приложения</h1> */}
+      <PaintingList paintings={paintings} />
     </div>
   );
-}
+};
 
 export default App;
