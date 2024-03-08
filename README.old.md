@@ -31,6 +31,17 @@ import 'modern-normalize/modern-normalize.css';
 
 6 Добавляем SASS - npm install sass
 
-Библиотека для стилизации https://styled-components.com/
-Библиотека компонентов с уже готовым стилем и функционалом Material UI https://mui.com/ 
-Библиотека Ant Design https://ant.design/
+Библиотека для стилизации https://styled-components.com/ Библиотека компонентов
+с уже готовым стилем и функционалом Material UI https://mui.com/ Библиотека Ant
+Design https://ant.design/
+
+Вы не знаете JS (серия книг)
+https://github.com/azat-io/you-dont-know-js-ru?tab=readme-ov-file
+
+Использование React Helmet для включения метаданных может значительно упростить
+процесс оптимизации SEO-приложений Reac
+https://www.freecodecamp.org/news/react-helmet-examples/
+
+formik https://formik.org/
+
+react hook https://react-hook-form.com/
