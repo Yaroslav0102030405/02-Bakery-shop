@@ -30,3 +30,7 @@ https://www.npmjs.com/package/modern-normalize - npm install modern-normalize
 import 'modern-normalize/modern-normalize.css';
 
 6 Добавляем SASS - npm install sass
+
+Библиотека для стилизации https://styled-components.com/
+Библиотека компонентов с уже готовым стилем и функционалом Material UI https://mui.com/ 
+Библиотека Ant Design https://ant.design/
