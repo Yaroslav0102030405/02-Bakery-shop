@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Painting from "./Painting";
+import MurkupPainting from "./MurkupPainting";
 
-const PaintingList = ({ paintings }) => (
+// передача динамических пропсов
+const PaintingList = ({ datapaintings }) => (
+  // деструктуризация деномических пропсов
   <ul>
-    {paintings.map(({ id, url, title, price, author, quantity }) => (
+    {datapaintings.map(({ id, url, title, price, author, quantity }) => (
       <li key={id}>
-        <Painting
+        <MurkupPainting
           url={url}
           title={title}
           price={price}
@@ -20,7 +22,7 @@ const PaintingList = ({ paintings }) => (
 );
 
 PaintingList.propTypes = {
-  paintings: PropTypes.arrayOf(
+  datapaintings: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
     })

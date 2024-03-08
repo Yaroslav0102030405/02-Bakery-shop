@@ -1,22 +1,21 @@
 import React from "react";
-import PaintingList from "./components/PaintingList";
-// import Panel from "./components/Panel";
-import paintings from "./datajson/paintings.json";
+import PaintingList from "./components/paintings/PaintingList";
+import datapaintings from "./datajson/datapaintings.json";
+import Panel from "./components/panel/Panel";
 
 const App = () => {
   return (
+    // передача динамических props
+    // XML разметка
     <div>
-      {/* <Panel title="Последние новости">
-        <p>fdgdfgfhfghjhjkhjkjhkhjkh</p>
-        <a href="">Читать...</a>
+      <Panel title="Свежие новости">
+        <p>Главная</p>
       </Panel>
-
       <Panel>
-        <p>fdgdfgfhfghjhjkhjkjhkhjkh</p>
+        <p>Главная</p>
       </Panel>
 
-      <h1>Главный компонент-контейнер приложения</h1> */}
-      <PaintingList paintings={paintings} />
+      <PaintingList datapaintings={datapaintings} />
     </div>
   );
 };

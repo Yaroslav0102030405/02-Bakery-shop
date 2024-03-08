@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Painting = ({ url, title, profileUrl, tag, price, quantity }) => (
+const MurkupPainting = ({ url, title, profileUrl, tag, price, quantity }) => (
+  // деструктуризация props
+  // JSX выражение
   <div>
     <img src={url} alt={title} width="480" />
     <h2>{title}</h2>
@@ -16,12 +18,14 @@ const Painting = ({ url, title, profileUrl, tag, price, quantity }) => (
 
 // Рекомендуеться ствить его для картинки
 // специальное свойство Painting - которое по дефолту отобразит что-то если не заргузиться
-Painting.defaultProps = {
+
+// дефолтный пропс
+MurkupPainting.defaultProps = {
   url: "https://cdn.pixabay.com/photo/2017/06/23/16/15/pencil-2435137_1280.jpg",
 };
 
 // для каждого пропса описал тип его значения
-Painting.propTypes = {
+MurkupPainting.propTypes = {
   url: PropTypes.string, // необязательный
   title: PropTypes.string.isRequired, // обязательный
   profileUrl: PropTypes.string.isRequired,
@@ -30,4 +34,4 @@ Painting.propTypes = {
   quantity: PropTypes.number.isRequired,
 };
 
-export default Painting;
+export default MurkupPainting;
