@@ -1,11 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import MurkupPainting from "./MurkupPainting";
+import React from 'react';
+import PropTypes from 'prop-types';
+import MurkupPainting from './MurkupPainting';
+import './PaintingList.scss';
 
 // передача динамических пропсов
 const PaintingList = ({ datapaintings }) => (
   // деструктуризация деномических пропсов
-  <ul>
+  <ul className="Flex">
     {datapaintings.map(({ id, url, title, price, author, quantity }) => (
       <li key={id}>
         <MurkupPainting
@@ -25,7 +26,7 @@ PaintingList.propTypes = {
   datapaintings: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };
 
