@@ -1,7 +1,32 @@
-.Container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+// .Container {
+//   max-width: 1200px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media screen and (min-width: 600px) {
+    .container {
+      max-width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
 }

@@ -1,0 +1,83 @@
+@import './../../../sass/utils/variables';
+// @import '././../../../sass/base';
+// @import './../../../sass/utils/variables';
+
+// /* Header section */
+.header {
+  // position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+  }
+
+  // &__logo {
+  //   margin-bottom: 32px;
+  // }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  &__list {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-grow: 1;
+      // justify-content: center;
+      justify-content: end;
+      gap: 64px;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.header__burger {
+  // display: inline-flex;
+  // display: flex;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  fill: $color-primary-light;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.header__burger .icon__close {
+  display: none;
+}
+
+/* Link */
+.link {
+  color: $color-primary-light;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: $color-brand-light;
+}

@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+/* Base */
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(253, 153, 29, 1) 2%,
+  //   rgba(252, 213, 69, 1) 89%
+  // );
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+
+  scroll-snap-type: red;
+
+  cursor: url('../images/cursor-green.png'), auto;
+}
+
+// html {
+//   scroll-behavior: auto;
+// }
+
+// scroll-container {
+//   scroll-behavior: smooth;
+// }
+
+// add scrollbar
+.window {
+  overflow: auto;
+  // border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+::-webkit-scrollbar {
+  // border: 1px solid #fff;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #819b57;
+  // border: 1px solid #fff;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  margin-top: 0;
+}
+
+ul {
+  /* убирраем маркеровку */
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
