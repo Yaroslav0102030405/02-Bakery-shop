@@ -5,6 +5,7 @@ import Hero from './pages/Home/Header/Hero/Hero';
 import Advantages from './pages/Home/Advantages/Advantages';
 import Traditions from './pages/Home/Traditions/Traditions';
 import Chefs from './pages/Chefs/Chefs';
+import Formats from './pages/Formats/Formats';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Advantages />
         <Traditions />
         <Chefs />
+        <Formats />
       </main>
     </>
   );
