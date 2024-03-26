@@ -1,0 +1,14 @@
+@import './../../sass/utils/variables';
+
+.hero__button {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 30px;
+  border-radius: 10px;
+  background-color: $color-brand-light;
+}
+
+.hero__button:focus,
+.hero__button:hover {
+  background-color: $color-primary-light;
+}

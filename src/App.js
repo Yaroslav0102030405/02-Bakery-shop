@@ -2,6 +2,7 @@ import React from 'react';
 // import Container from './components/container/Container';
 import Header from './pages/Home/Header/Header';
 import Hero from './pages/Home/Header/Hero/Hero';
+import Advantages from './pages/Home/Advantages/Advantages';
 
 const App = () => {
   return (
@@ -10,9 +11,8 @@ const App = () => {
     <>
       <Header />
       <main>
-        {/* <Container> */}
         <Hero />
-        {/* </Container> */}
+        <Advantages />
       </main>
     </>
   );

@@ -53,19 +53,6 @@
       font-weight: 900;
     }
   }
-
-  &__button {
-    display: block;
-    margin: 0 auto;
-    padding: 18px 30px;
-    border-radius: 10px;
-    background-color: $color-brand-light;
-  }
-
-  &__button:focus,
-  &__button:hover {
-    background-color: $color-primary-light;
-  }
 }
 
 // .hero__button {

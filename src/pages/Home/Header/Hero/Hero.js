@@ -1,5 +1,6 @@
 import React from 'react';
 import './hero.scss';
+import Button from '../../../../components/Button/Button';
 
 const Hero = () => {
   return (
@@ -8,9 +9,7 @@ const Hero = () => {
         <h1 className="hero__title">
           <span className="accent">Сучасна</span> пекарня
         </h1>
-        <button className="hero__button" type="button">
-          Замовити дзвінок
-        </button>
+        <Button />
       </section>
     </>
   );
