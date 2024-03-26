@@ -6,9 +6,9 @@ import Ribbon from '../../../components/Ribbon/Ribbon';
 const Advantages = () => {
   return (
     <>
-      <section class="advantages">
-        <div class="container">
-          <h2 class="visually-hidden">Наші переваги</h2>
+      <section className="advantages">
+        <div className="container">
+          <h2 className="visually-hidden">Наші переваги</h2>
           <Ribbon props={ribbonjson} />
         </div>
       </section>

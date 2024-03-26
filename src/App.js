@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './pages/Home/Header/Header';
 import Hero from './pages/Home/Header/Hero/Hero';
 import Advantages from './pages/Home/Advantages/Advantages';
+import Traditions from './pages/Home/Traditions/Traditions';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <main>
         <Hero />
         <Advantages />
+        <Traditions />
       </main>
     </>
   );
