@@ -1,0 +1,77 @@
+// @import './../../../../sass/base';
+@import './../../../../sass/utils/variables';
+
+.hero {
+  background-image: linear-gradient(
+      103deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url('../../../../images/hero-background-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  /* Дєкоративний ефект */
+  background-attachment: fixed;
+  padding: 122px 0;
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        103deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url('../../../../images/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    /* Дєкоративний ефект */
+    background-attachment: fixed;
+    padding: 122px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 272px 0;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    color: $color-primary-light;
+    text-align: center;
+
+    font-size: 67px;
+    line-height: 1;
+    font-weight: 600;
+    //  max-width: 292px;
+
+    @media screen and (min-width: $desktop) {
+      // margin-bottom: 0;
+      font-size: 128px;
+      line-height: 1.5;
+      font-weight: 900;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 30px;
+    border-radius: 10px;
+    background-color: $color-brand-light;
+  }
+
+  &__button:focus,
+  &__button:hover {
+    background-color: $color-primary-light;
+  }
+}
+
+// .hero__button {
+//   margin: 0 auto;
+// }
+
+.hero__title .accent {
+  color: $color-brand-light;
+}
