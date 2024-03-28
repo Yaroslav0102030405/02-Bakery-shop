@@ -87,11 +87,16 @@
 }
 
 .section {
-  padding: 20px 0;
-
+  padding: 48px 0;
   @media screen and (min-width: $tablet) {
     padding: 48px 0;
   }
+
+  // @media screen and (min-width: $tablet) {
+  //   // padding: 100px 0;
+  //   padding-top: 48px;
+  //   padding-bottom: 100px;
+  // }
 
   &__title {
     color: var(--color-primary-dark);

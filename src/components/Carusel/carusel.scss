@@ -4,10 +4,10 @@
 }
 
 .slick-slide > div {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 .slick-list {
-  margin: 0 -10px;
+  margin: 0 -15px;
 }
 
 .slider__item > img {
@@ -34,4 +34,15 @@ button.slick-arrow.slick-prev::before {
 
 button.slick-arrow.slick-next::before {
   color: black;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  // font-family: 'slick';
+  font-size: 50px;
+  // line-height: 1;
+  // opacity: 0.75;
+  // // color: white;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }

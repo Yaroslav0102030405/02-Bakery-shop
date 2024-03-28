@@ -1,0 +1,64 @@
+@import './../../sass/utils/variables';
+
+.form {
+  &__field {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__label {
+    display: block;
+  }
+  &__input {
+    padding: 8px 24px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #a18268;
+    /* background-color: var(--color-primary-light); */
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.17;
+
+    @media screen and (min-width: $desktop) {
+      padding: 16px 42px;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    // padding: 16px 32px;
+    // font-size: 16px;
+  }
+
+  &__terms {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin: 0 auto;
+      margin-top: 24px;
+      width: 210px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $color-primary-dark;
+    text-underline-offset: 2px;
+  }
+}
+
+.form__input:focus {
+  border-color: #819b57;
+  outline: none;
+}
+
+.form__input::placeholder {
+  color: #a18268;
+}

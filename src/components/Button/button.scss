@@ -6,9 +6,13 @@
   padding: 18px 30px;
   border-radius: 10px;
   background-color: $color-brand-light;
+  color: $color-primary-light;
+  border: 1px solid $color-brand-light;
 }
 
 .hero__button:focus,
 .hero__button:hover {
   background-color: $color-primary-light;
+  color: $color-primary-dark;
+  border: 1px solid black;
 }
