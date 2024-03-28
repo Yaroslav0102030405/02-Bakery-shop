@@ -30,19 +30,21 @@
 
 button.slick-arrow.slick-prev::before {
   color: black;
+  cursor: url('../../images/cursor232.png'), auto;
 }
 
 button.slick-arrow.slick-next::before {
   color: black;
+  cursor: url('../../images/cursor232.png'), auto;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  // font-family: 'slick';
-  font-size: 50px;
-  // line-height: 1;
-  // opacity: 0.75;
-  // // color: white;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-}
+// .slick-prev:before,
+// .slick-next:before {
+//   // font-family: 'slick';
+//   font-size: 50px;
+//   // line-height: 1;
+//   // opacity: 0.75;
+//   // // color: white;
+//   // -webkit-font-smoothing: antialiased;
+//   // -moz-osx-font-smoothing: grayscale;
+// }
