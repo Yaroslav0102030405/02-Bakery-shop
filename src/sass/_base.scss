@@ -72,16 +72,19 @@ body {
 
 ::-webkit-scrollbar {
   // border: 1px solid #fff;
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(34, 193, 195, 1) 0%,
+  //   rgba(253, 187, 45, 1) 100%
+  // );
+  background: #faf4ea;
+  background: #819b57;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: #819b57;
+  // background: #819b57;
+  background: #faf4ea;
   // border: 1px solid #fff;
 }
 
