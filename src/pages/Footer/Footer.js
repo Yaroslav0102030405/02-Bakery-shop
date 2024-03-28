@@ -17,22 +17,22 @@ const Footer = () => {
 
             <ul className="footer-menu">
               <li>
-                <a className="link" href="#">
+                <a className="link" href="#traditions">
                   Наші традиції
                 </a>
               </li>
               <li>
-                <a className="link" href="#">
+                <a className="link" href="#chef">
                   Шеф-кухарі
                 </a>
               </li>
               <li>
-                <a className="link" href="#">
+                <a className="link" href="#formats">
                   Формати
                 </a>
               </li>
               <li>
-                <a className="link" href="#">
+                <a className="link" href="#contact">
                   Контакти
                 </a>
               </li>
