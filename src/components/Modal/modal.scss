@@ -1,72 +1,5 @@
 @import './../../sass/utils/variables';
 
-/* Modal */
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   left: 0;
-//   bottom: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   padding: 20px;
-//   transition:
-//     opacity 0.3s,
-//     visibility 0.3s;
-//   overflow-y: scroll;
-// }
-
-// .modal {
-//   position: relative;
-//   width: 100%;
-//   max-width: 580px;
-//   // max-height: 680px;
-//   // height: 100%;
-//   background-color: $color-primary-light;
-//   border-radius: 32px;
-
-//   padding: 28px;
-//   // overflow: auto;
-
-//   @media screen and (max-width: $tablet) {
-//     padding: 28px;
-//   }
-// }
-
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
-
-.modal-btn-close {
-  display: block;
-  // position: absolute;
-  // top: 20px;
-  // right: 40px;
-  border: 0;
-  // margin-right: auto;
-  margin-left: auto;
-  // background-color: $color-primary-light;
-  background-color: inherit;
-  // padding: 5px;
-  border-radius: 50%;
-
-  // @media screen and (max-width: $tablet) {
-  //   // top: 0;
-  //   // right: 20px;
-  // }
-  // fill: aqua;
-}
-
-.modal-btn-close:focus,
-.modal-btn-close:hover {
-  // fill: aqua;
-  background-color: #819b57;
-}
-
 .modal {
   padding: 15px;
   height: 100vh;
@@ -75,19 +8,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  //   left: 0;
-  //   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  //   padding: 20px;
-  //   transition:
-  //     opacity 0.3s,
-  //     visibility 0.3s;
-  //   overflow-y: scroll;
-
-  //   transform: scale(0);
   opacity: 0;
   pointer-events: none;
   transition: 0.5s;
@@ -96,7 +19,6 @@
 .modal.active {
   opacity: 1;
   pointer-events: all;
-  //   transform: scale(1);
 }
 
 .modal__content {
@@ -128,6 +50,19 @@
   color: black;
   border: 1px solid black;
   background-color: inherit;
+}
+
+.modal-btn-close {
+  display: block;
+  border: 0;
+  margin-left: auto;
+  background-color: inherit;
+  border-radius: 50%;
+}
+
+.modal-btn-close:focus,
+.modal-btn-close:hover {
+  background-color: #819b57;
 }
 
 .modal-title {
