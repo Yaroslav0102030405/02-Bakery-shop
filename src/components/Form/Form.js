@@ -1,6 +1,6 @@
 import React from 'react';
 import './form.scss';
-import Button from './../Button/Button';
+// import Button from './../Button/Button';
 
 const Form = () => {
   return (
@@ -53,10 +53,10 @@ const Form = () => {
           />
         </div>
 
-        {/* <button className="button form__button" type="submit">
+        <button className="button form__button" type="submit">
           Замовити дзвінок
-        </button> */}
-        <Button />
+        </button>
+        {/* <Button /> */}
         <p className="form__terms">
           Натискаючи на кнопку я погоджуюсь з
           <a className="form__link" href="#">

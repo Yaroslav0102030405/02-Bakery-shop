@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './button.scss';
 
+import { ReactComponent as IconClose } from '../../Icons/icon-close.svg';
 import Modal from '../Modal/Modal';
 
 const Button = () => {
-  const [modalActive, setModalActive] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
   return (
     <>
       <button
@@ -17,10 +18,12 @@ const Button = () => {
       <Modal active={modalActive} setActive={setModalActive}>
         {/* <div class="backdrop is-hidden">
           <div class="modal"> */}
-        <button className="modal-btn-close" type="button">
-          {/* <svg width="32" height="32">
-            <use src="./images/icons-svg.svg#icon-icon"></use>
-          </svg> */}
+        <button
+          className="modal-btn-close"
+          type="button"
+          onClick={() => setModalActive(false)}
+        >
+          <IconClose />
           {/* <svg
             width="32"
             height="32"

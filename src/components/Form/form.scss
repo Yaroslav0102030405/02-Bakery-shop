@@ -66,3 +66,13 @@
 .form__input::placeholder {
   color: #a18268;
 }
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 30px;
+  border-radius: 10px;
+  background-color: #819b57;
+  color: #faf4ea;
+  border: 1px solid #819b57;
+}

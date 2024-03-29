@@ -41,18 +41,31 @@
 //   pointer-events: none;
 // }
 
-// .modal-btn-close {
-//   position: absolute;
-//   top: 20px;
-//   right: 40px;
-//   border: 0;
-//   background-color: $color-primary-light;
+.modal-btn-close {
+  display: block;
+  // position: absolute;
+  // top: 20px;
+  // right: 40px;
+  border: 0;
+  // margin-right: auto;
+  margin-left: auto;
+  // background-color: $color-primary-light;
+  background-color: inherit;
+  // padding: 5px;
+  border-radius: 50%;
 
-//   @media screen and (max-width: $tablet) {
-//     top: 0;
-//     right: 20px;
-//   }
-// }
+  // @media screen and (max-width: $tablet) {
+  //   // top: 0;
+  //   // right: 20px;
+  // }
+  // fill: aqua;
+}
+
+.modal-btn-close:focus,
+.modal-btn-close:hover {
+  // fill: aqua;
+  background-color: #819b57;
+}
 
 .modal {
   padding: 15px;
