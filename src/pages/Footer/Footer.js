@@ -22,7 +22,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="link" href="#chef">
+                <a className="link" href="#chefs">
                   Шеф-кухарі
                 </a>
               </li>

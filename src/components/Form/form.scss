@@ -34,7 +34,9 @@
   }
 
   &__terms {
-    display: none;
+    // display: none;
+    font-size: 12px;
+    text-align: center;
 
     @media screen and (min-width: $tablet) {
       display: block;
@@ -51,6 +53,8 @@
   &__link {
     color: $color-primary-dark;
     text-underline-offset: 2px;
+    // margin-right: 5px;
+    margin-left: 6px;
   }
 }
 

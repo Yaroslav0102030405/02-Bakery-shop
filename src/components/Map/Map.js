@@ -1,10 +1,11 @@
 import React from 'react';
-import './map.scss';
+// import './map.scss';
 
 const Map = () => {
   return (
     <>
       <iframe
+        // className="map"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
