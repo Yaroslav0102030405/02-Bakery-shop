@@ -1,6 +1,6 @@
 import React from 'react';
 import './traditions.scss';
-import ImageMan from './../../../images/baker-man.jpg';
+import ImageMan from './../../images/baker-man.jpg';
 // import ImageMan1 from './../../../images/baker-man@1x.jpg';
 
 const Traditions = () => {

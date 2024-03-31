@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import Logo from './../../../components/Logo/Logo';
-import menujsons from './../../../datajson/menu.json';
-import Menu from '../../../components/Menu/Menu';
-import MobileMenu from '../../../components/MobalMenu/MobalMenu';
-import { ReactComponent as IconBurger } from './../../../Icons/icon-burger.svg';
-
-// import { ReactComponent as IconClose } from './../../../Icons/icon-close.svg';
-// import Logo from './../../../components/Logo/Logo';
-
+import Logo from './../../components/Logo/Logo';
+import menujsons from './../../datajson/menu.json';
+import Menu from './../../components/Menu/Menu';
+import MobileMenu from './../../components/MobalMenu/MobalMenu';
+import { ReactComponent as IconBurger } from './../../Icons/icon-burger.svg';
 import './Header.scss';
 
 const Header = () => {

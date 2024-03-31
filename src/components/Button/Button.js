@@ -76,7 +76,7 @@ const Button = () => {
           </div>
 
           <button className="button form__button" type="submit">
-            Замовити дзвінок
+            Відправити
           </button>
 
           <p className="form__terms">

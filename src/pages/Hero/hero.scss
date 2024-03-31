@@ -1,5 +1,5 @@
 // @import './../../../../sass/base';
-@import './../../../../sass/utils/variables';
+@import './../../sass/utils/variables';
 
 .hero {
   background-image: linear-gradient(
@@ -8,7 +8,7 @@
       rgba(18, 18, 17, 0.6) 58.46%,
       rgba(18, 18, 17, 0) 90.36%
     ),
-    url('../../../../images/hero-background-mobile.jpg');
+    url('./../../images/hero-background-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -23,7 +23,7 @@
         rgba(18, 18, 17, 0.6) 58.46%,
         rgba(18, 18, 17, 0) 90.36%
       ),
-      url('../../../../images/hero-background.jpg');
+      url('./../../images/hero-background.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

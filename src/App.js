@@ -1,9 +1,9 @@
 import React from 'react';
 // import Container from './components/container/Container';
-import Header from './pages/Home/Header/Header';
-import Hero from './pages/Home/Header/Hero/Hero';
-import Advantages from './pages/Home/Advantages/Advantages';
-import Traditions from './pages/Home/Traditions/Traditions';
+import Header from './pages//Header/Header';
+import Hero from './pages/Hero/Hero';
+import Advantages from './pages/Advantages/Advantages';
+import Traditions from './pages/Traditions/Traditions';
 import Chefs from './pages/Chefs/Chefs';
 import Formats from './pages/Formats/Formats';
 import Contacts from './pages/Contacts/Contacts';

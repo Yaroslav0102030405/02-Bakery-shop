@@ -1,7 +1,7 @@
 import React from 'react';
 import './advantages.scss';
-import ribbonjson from './../../../datajson/Ribbon.json';
-import Ribbon from '../../../components/Ribbon/Ribbon';
+import ribbonjson from './../../datajson/Ribbon.json';
+import Ribbon from './../../components/Ribbon/Ribbon';
 
 const Advantages = () => {
   return (

@@ -68,14 +68,14 @@ const Footer = () => {
               <ul className="footer__social">
                 <li>
                   <a href="#">
-                    <svg class="address__icon" width="32" height="32">
+                    <svg className="address__icon" width="32" height="32">
                       <use href="./images/icons-svg.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <svg class="address__icon" width="32" height="32">
+                    <svg className="address__icon" width="32" height="32">
                       <use href="./images/icons-svg.svg#icon-instagram"></use>
                     </svg>
                   </a>
