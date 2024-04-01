@@ -1,18 +1,18 @@
-@import './../../sass/utils/variables';
+// @import './../../sass/utils/variables';
 
-.hero__button {
-  display: block;
-  margin: 0 auto;
-  padding: 18px 30px;
-  border-radius: 10px;
-  background-color: $color-brand-light;
-  color: $color-primary-light;
-  border: 1px solid $color-brand-light;
-}
+// .hero__button {
+//   display: block;
+//   margin: 0 auto;
+//   padding: 18px 30px;
+//   border-radius: 10px;
+//   background-color: var(--color-brand-light);
+//   color: var(--color-primary-light);
+//   border: 1px solid var(--color-brand-light);
+// }
 
-.hero__button:focus,
-.hero__button:hover {
-  background-color: $color-primary-light;
-  color: $color-primary-dark;
-  border: 1px solid black;
-}
+// .hero__button:focus,
+// .hero__button:hover {
+//   background-color: var(--color-primary-light);
+//   color: var(--color-primary-dark);
+//   border: 1px solid black;
+// }

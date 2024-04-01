@@ -1,20 +1,41 @@
 import React, { useState } from 'react';
-import './button.scss';
+// import './button.scss';
+
+// import '../../sass/utils/_variables.scss';
+
+import styled from 'styled-components';
 
 import { ReactComponent as IconClose } from '../../Icons/icon-close.svg';
 import Modal from '../Modal/Modal';
+
+const HeroButton = styled.button`
+  display: block;
+  margin: 0 auto;
+  padding: 18px 30px;
+  border-radius: 10px;
+  background-color: #819b57;
+  color: #faf4ea;
+  border: 1px solid #819b57;
+
+  &:focus,
+  &:hover {
+    background-color: #faf4ea;
+    color: #31261a;
+    border: 1px solid black;
+  }
+`;
 
 const Button = () => {
   const [modalActive, setModalActive] = useState(false);
   return (
     <>
-      <button
+      <HeroButton
         className="hero__button open-btn"
         type="button"
         onClick={() => setModalActive(true)}
       >
         Замовити дзвінок
-      </button>
+      </HeroButton>
       <Modal active={modalActive} setActive={setModalActive}>
         {/* <div class="backdrop is-hidden">
           <div class="modal"> */}
