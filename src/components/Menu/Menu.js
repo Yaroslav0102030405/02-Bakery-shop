@@ -1,39 +1,44 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const List = styled.ul`
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    gap: 64px;
+  }
+`;
+
+const Link = styled.a`
+  color: #faf4ea;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #819b57;
+  }
+`;
 
 const Menu = ({ props }) => {
   return (
     <>
-      {/* <ul className="header__list">
-        {props.map(({ id, link }) => (
-          <li key={id}>
-            <a className="link" href="#">
-              {link}
-            </a>
-          </li>
-        ))}
-      </ul> */}
-      <ul className="header__list">
+      <List>
         <li>
-          <a className="link" href="#traditions">
-            Наші традиції
-          </a>
+          <Link href="#traditions">Наші традиції</Link>
         </li>
         <li>
-          <a className="link" href="#chefs">
-            Шеф-кухарі
-          </a>
+          <Link href="#chefs">Шеф-кухарі</Link>
         </li>
         <li>
-          <a className="link" href="#formats">
-            Формати
-          </a>
+          <Link href="#formats">Формати</Link>
         </li>
         <li>
-          <a className="link" href="#contact">
-            Контакти
-          </a>
+          <Link href="#contact">Контакти</Link>
         </li>
-      </ul>
+      </List>
     </>
   );
 };

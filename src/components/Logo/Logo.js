@@ -5,7 +5,7 @@ import { ReactComponent as IconLogo } from './../../Icons/icon-logo.svg';
 const Logo = () => {
   return (
     <>
-      <a className="menu__logo" href="/">
+      <a href="/">
         <IconLogo />
       </a>
     </>

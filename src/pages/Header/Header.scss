@@ -3,81 +3,69 @@
 // @import './../../../sass/utils/variables';
 
 // /* Header section */
-.header {
-  // position: relative;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 16px;
+// .header {
+// position: absolute;
+// top: 0;
+// left: 0;
+// width: 100%;
+// padding-top: 16px;
 
-  @media screen and (min-width: $desktop) {
-    padding-top: 32px;
-  }
+// @media screen and (min-width: $desktop) {
+//   padding-top: 32px;
+// }
 
-  // &__logo {
-  //   margin-bottom: 32px;
-  // }
+// &__container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
 
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+// &__nav {
+//   display: flex;
+//   flex-grow: 1;
+//   align-items: center;
+// }
 
-  &__nav {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-  }
+// &__list {
+//   display: none;
+//   @media screen and (min-width: $desktop) {
+//     display: flex;
+//     flex-grow: 1;
+//     justify-content: end;
+//     gap: 64px;
+//   }
+// }
 
-  &__list {
-    display: none;
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      flex-grow: 1;
-      // justify-content: center;
-      justify-content: end;
-      gap: 64px;
-    }
-  }
+// &__button {
+//   @media screen and (max-width: $tablet) {
+//     display: none;
+//   }
+// }
+// }
 
-  &__button {
-    @media screen and (max-width: $tablet) {
-      display: none;
-    }
-  }
-}
+// .header__burger {
+//   margin: 0;
+//   background-color: transparent;
+//   border: none;
+//   padding: 0;
 
-.header__burger {
-  // display: inline-flex;
-  // display: flex;
-  margin: 0;
-  // padding: 0;
-  // width: 34px;
-  // height: 34px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  // fill: $color-primary-light;
+//   @media screen and (min-width: $desktop) {
+//     display: none;
+//   }
+// }
 
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
-
-.header__burger .icon__close {
-  display: none;
-}
+// .header__burger .icon__close {
+//   display: none;
+// }
 
 /* Link */
-.link {
-  color: $color-primary-light;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+// .link {
+//   color: $color-primary-light;
+//   font-weight: 600;
+//   text-decoration: none;
+//   transition: color 0.3s;
+// }
 
-.link:hover {
-  color: $color-brand-light;
-}
+// .link:hover {
+//   color: $color-brand-light;
+// }

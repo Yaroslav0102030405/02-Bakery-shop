@@ -4,79 +4,64 @@ import menujsons from './../../datajson/menu.json';
 import Menu from './../../components/Menu/Menu';
 import MobileMenu from './../../components/MobalMenu/MobalMenu';
 import { ReactComponent as IconBurger } from './../../Icons/icon-burger.svg';
-import './Header.scss';
+// import './Header.scss'
+import styled from 'styled-components';
+
+const HeaderTag = styled.header`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 32px;
+  }
+`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const HeaderNav = styled.nav`
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+`;
+
+const HeaderBurger = styled.button`
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+`;
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
   return (
     <>
-      <header className="header">
+      <HeaderTag className="header">
         <div className="container">
-          <div className="header__container">
+          <HeaderContainer>
             <Logo />
-            <nav className="header__nav">
+            <HeaderNav>
               <Menu props={menujsons} />
-            </nav>
+            </HeaderNav>
 
-            <button
-              onClick={() => setMenuActive(true)}
-              className="header__burger menu-btn-open js-open-modal"
-              type="button"
-            >
+            <HeaderBurger onClick={() => setMenuActive(true)} type="button">
               <IconBurger />
-            </button>
+            </HeaderBurger>
 
             <MobileMenu active={menuActive} setMenuActive={setMenuActive} />
-            {/* <button
-                className="mobile-menu__btn-close menu-btn-close js-close-modal"
-                type="button"
-                onClick={() => setMenuActive(false)}
-              >
-                <IconClose />
-              </button>
-              <Logo />
-              <ul className="mobile">
-                <li>
-                  <a
-                    className="mobile__link"
-                    href="#traditions"
-                    onClick={() => setMenuActive(false)}
-                  >
-                    Наші традиції
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="mobile__link"
-                    href="#chefs"
-                    onClick={() => setMenuActive(false)}
-                  >
-                    Шеф-кухарі
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="mobile__link"
-                    href="#formats"
-                    onClick={() => setMenuActive(false)}
-                  >
-                    Формати
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="mobile__link"
-                    href="#contact"
-                    onClick={() => setMenuActive(false)}
-                  >
-                    Контакти
-                  </a>
-                </li>
-              </ul> */}
-            {/* </MobileMenu> */}
-          </div>
+          </HeaderContainer>
         </div>
-      </header>
+      </HeaderTag>
     </>
   );
 };
