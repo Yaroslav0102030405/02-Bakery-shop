@@ -1,63 +1,61 @@
 // @import './../../../sass/base';
-@import './../../sass/utils/variables';
+// @import './../../sass/utils/variables';
 
 /* Traditions section*/
-.traditions {
-  padding-top: 24px;
+// .traditions {
+// padding-top: 24px;
 
-  @media screen and (min-width: $desktop) {
-    padding-top: 96px;
-  }
+// @media screen and (min-width: $desktop) {
+//   padding-top: 96px;
+// }
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: flex-start;
-  }
+// &__container {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 40px;
+//   align-items: flex-start;
+// }
 
-  &__content {
-    max-width: 710px;
-  }
+// &__content {
+//   max-width: 710px;
+// }
 
-  &__title {
-    margin-bottom: 24px;
-    font-size: 32px;
-    // font-weight: 900;
-    // line-height: 1.5;
+// &__title {
+//   margin-bottom: 24px;
+//   font-size: 32px;
 
-    @media screen and (min-width: $desktop) {
-      font-size: 64px;
-      margin-bottom: 42px;
-    }
-  }
+//   @media screen and (min-width: $desktop) {
+//     font-size: 64px;
+//     margin-bottom: 42px;
+//   }
+// }
 
-  &__baker {
-    display: none;
-    border-radius: 400px 400px 0px 0px;
-    // cursor: url('../../../images/zoom40.png'), auto;
-    // margin-left: 20px;
+//   &__baker {
+//     display: none;
+//     border-radius: 400px 400px 0px 0px;
 
-    @media screen and (min-width: $tablet) {
-      display: block;
-    }
-  }
-}
+//     @media screen and (min-width: $tablet) {
+//       display: block;
+//     }
+//   }
+// }
 
-.tranditions__text--uppercase {
-  text-transform: uppercase;
-}
+// .tranditions__text--uppercase {
+//   text-transform: uppercase;
+//   color: $color-brand-light;
+//   font-weight: 600;
+// }
 
-.traditions__text--brand {
-  color: $color-brand-light;
-  font-weight: 600;
-  /* text-transform: uppercase; */
-}
+// .traditions__text--brand {
+//   color: $color-brand-light;
+//   font-weight: 600;
+//   /* text-transform: uppercase; */
+// }
 
-.tranditions__text:nth-child(2) {
-  max-width: 640px;
-}
+// .tranditions__text:nth-child(2) {
+//   max-width: 640px;
+// }
 
-.tranditions__text:nth-child(3) {
-  max-width: 336px;
-}
+// .tranditions__text:nth-child(3) {
+//   max-width: 336px;
+// }
