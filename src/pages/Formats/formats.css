@@ -1,0 +1,7 @@
+/* @import './../../sass/utils/variables'; */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

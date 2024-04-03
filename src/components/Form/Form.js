@@ -1,15 +1,19 @@
 import React from 'react';
-import './form.scss';
+// import './form.scss';
+import './form.css';
 // import Button from './../Button/Button';
 
 import styled from 'styled-components';
+
+const Desktop = '1280px';
+const Tablet = '768px';
 
 const Title = styled.h2`
   margin: 0 auto 16px;
   font-size: 32px;
   width: 265px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Tablet}) {
     font-size: 64px;
     width: 605px;
   }
@@ -19,23 +23,23 @@ const Text = styled.p`
   margin: 0 auto 24px;
   font-size: 14px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     margin-bottom: 42px;
     font-size: 18px;
   }
 `;
 
 const FormField = styled.div`
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
+  @media screen and (min-width: ${Tablet}) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: ${Desktop}) {
+    margin-bottom: 29px;
   }
 `;
-
-// const Label = styled.label`
-//   display: block;
-// `;
 
 const Input = styled.input`
   padding: 8px 24px;
@@ -46,12 +50,16 @@ const Input = styled.input`
   font-size: 16px;
   line-height: 1.17;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (max-width: ${Tablet}) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: ${Desktop}) {
     padding: 16px 42px;
   }
 
   &:focus {
-    border-color: #819b57;
+    border-color: var(--color-brand-light);
     outline: none;
   }
 
@@ -65,9 +73,9 @@ const FormButton = styled.button`
   margin: 0 auto;
   padding: 18px 30px;
   border-radius: 10px;
-  background-color: #819b57;
-  color: #faf4ea;
-  border: 1px solid #819b57;
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  border: 1px solid var(--color-brand-light);
 
   &:focus,
   &:hover {
@@ -80,16 +88,14 @@ const FormButton = styled.button`
 const FormTerms = styled.p`
   font-size: 12px;
   text-align: center;
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${Tablet}) {
     display: block;
     margin: 0 auto;
     margin-top: 24px;
     width: 210px;
     text-align: center;
   }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Desktop}) {
     display: block;
     margin: 0 auto;
     margin-top: 24px;

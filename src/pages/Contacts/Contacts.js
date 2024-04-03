@@ -5,8 +5,10 @@ import Map from '../../components/Map/Map';
 
 import styled from 'styled-components';
 
+const Tablet = '768px';
+
 const ContactEl = styled.section`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Tablet}) {
     padding-bottom: 96px;
   }
 `;
@@ -16,7 +18,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Tablet}) {
     flex-direction: row;
     gap: 32px;
   }

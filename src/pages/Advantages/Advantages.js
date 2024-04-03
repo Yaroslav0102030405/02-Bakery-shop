@@ -5,10 +5,12 @@ import Ribbon from './../../components/Ribbon/Ribbon';
 
 import styled from 'styled-components';
 
+const Desktop = '1280px';
+
 const SectionAdventures = styled.section`
   padding: 16px 0;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     background-color: #819b57;
   }
 `;

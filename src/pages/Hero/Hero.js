@@ -6,6 +6,9 @@ import Button from './../../components/Button/Button';
 import ImageBackgroundMobile from '../../images/hero-background-mobile.jpg';
 import ImageBackround from '../../images/hero-background.jpg';
 
+const Desktop = '1280px';
+const Tablet = '768px';
+
 const SectionHero = styled.section`
   background-image: linear-gradient(
       103deg,
@@ -21,7 +24,7 @@ const SectionHero = styled.section`
   background-attachment: fixed;
   padding: 122px 0;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Tablet}) {
     background-image: linear-gradient(
         103deg,
         rgba(18, 18, 17, 0.78) 2.03%,
@@ -37,7 +40,7 @@ const SectionHero = styled.section`
     padding: 122px 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     padding: 272px 0;
   }
 `;
@@ -50,7 +53,7 @@ const Title = styled.h1`
   line-height: 1;
   font-weight: 600;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Tablet}) {
     font-size: 128px;
     line-height: 1.5;
     font-weight: 900;

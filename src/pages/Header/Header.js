@@ -7,6 +7,8 @@ import { ReactComponent as IconBurger } from './../../Icons/icon-burger.svg';
 // import './Header.scss'
 import styled from 'styled-components';
 
+const Desktop = '1280px';
+
 const HeaderTag = styled.header`
   position: absolute;
   top: 0;
@@ -14,7 +16,7 @@ const HeaderTag = styled.header`
   width: 100%;
   padding-top: 16px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     padding-top: 32px;
   }
 `;
@@ -37,7 +39,7 @@ const HeaderBurger = styled.button`
   border: none;
   padding: 0;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     display: none;
   }
 `;

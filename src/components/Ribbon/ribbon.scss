@@ -1,28 +1,28 @@
-@import './../../sass/utils/variables';
+// @import './../../sass/utils/variables';
 
-.advantages__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px 40px;
-  background-color: #cfcfbc;
-  border-radius: 24px;
+// .advantages__list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
+//   padding: 24px 40px;
+//   background-color: #cfcfbc;
+//   border-radius: 24px;
 
-  @media screen and (min-width: 1280px) {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-    background-color: transparent;
-    color: $color-primary-light;
-    padding: 0;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     gap: 40px;
+//     background-color: transparent;
+//     color: $color-primary-light;
+//     padding: 0;
+//   }
+// }
 
-.advantages__item {
-  font-size: 14px;
-  font-weight: 300;
+// .advantages__item {
+//   font-size: 14px;
+//   font-weight: 300;
 
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     font-size: 20px;
+//   }
+// }

@@ -1,5 +1,6 @@
 import React from 'react';
-import './modal.scss';
+// import './modal.scss';
+import './modal.css';
 
 // import styled from 'styled-components';
 

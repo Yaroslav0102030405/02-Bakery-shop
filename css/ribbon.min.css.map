@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/components/Ribbon/ribbon.scss","../src/sass/utils/_variables.scss"],"names":[],"mappings":"AAEA,kBACE,mBAAA,CAAA,mBAAA,CAAA,YAAA,CACA,2BAAA,CAAA,4BAAA,CAAA,yBAAA,CAAA,qBAAA,CACA,QAAA,CACA,iBAAA,CACA,wBAAA,CACA,kBAAA,CAEA,sCARF,kBASI,6BAAA,CAAA,4BAAA,CAAA,sBAAA,CAAA,kBAAA,CACA,wBAAA,CAAA,qBAAA,CAAA,6BAAA,CACA,QAAA,CACA,8BAAA,CACA,aCdkB,CDelB,SAAA,CAAA,CAIJ,kBACE,cAAA,CACA,eAAA,CAEA,sCAJF,kBAKI,cAAA,CAAA","file":"ribbon.min.css"}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"ribbon.min.css"}

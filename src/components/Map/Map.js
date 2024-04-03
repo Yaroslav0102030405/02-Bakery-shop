@@ -3,6 +3,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+const Tablet = '768px';
+const Desktob = '1280px';
+
 const ContactMap = styled.iframe`
   padding-top: 20px;
   padding-bottom: 20px;
@@ -10,12 +13,12 @@ const ContactMap = styled.iframe`
   height: 100%;
   border-radius: 16px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Tablet}) {
     width: 320px;
     height: 500px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktob}) {
     width: 603px;
     height: 595px;
   }

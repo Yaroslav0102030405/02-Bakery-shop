@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Desktop = '1280px';
+
 const List = styled.ul`
   display: none;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     display: flex;
     flex-grow: 1;
     justify-content: end;
@@ -12,7 +14,7 @@ const List = styled.ul`
 `;
 
 const Link = styled.a`
-  color: #faf4ea;
+  color: var(--color-primary-light);
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s;

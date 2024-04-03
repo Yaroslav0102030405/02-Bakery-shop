@@ -5,10 +5,13 @@ import ImageMan from './../../images/baker-man.jpg';
 // import ImageMan1 from './../../../images/baker-man@1x.jpg';
 import styled from 'styled-components';
 
+const Desktop = '1280px';
+const Tablet = '768px';
+
 const SectionTraditions = styled.section`
   padding-top: 24px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     padding-top: 96px;
   }
 `;
@@ -28,7 +31,7 @@ const Ttitle = styled.h2`
   margin-bottom: 24px;
   font-size: 32px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${Desktop}) {
     font-size: 64px;
     margin-bottom: 42px;
   }
@@ -38,14 +41,14 @@ const Timage = styled.img`
   display: none;
   border-radius: 400px 400px 0px 0px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${Tablet}) {
     display: block;
   }
 `;
 
 const TtextUperCase = styled.span`
   text-transform: uppercase;
-  color: #819b57;
+  color: var(--color-brand-light);
   font-weight: 600;
 `;
 
@@ -58,7 +61,7 @@ const Ttext2 = styled.p`
 `;
 
 const Tbrand = styled.span`
-  color: #819b57;
+  color: var(--color-brand-light);
   font-weight: 600;
 `;
 

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 // import './button.scss';
-
 // import '../../sass/utils/_variables.scss';
-
 import styled from 'styled-components';
 
 import { ReactComponent as IconClose } from '../../Icons/icon-close.svg';
@@ -13,14 +11,14 @@ const HeroButton = styled.button`
   margin: 0 auto;
   padding: 18px 30px;
   border-radius: 10px;
-  background-color: #819b57;
-  color: #faf4ea;
-  border: 1px solid #819b57;
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  border: 1px solid var(--color-brand-light);
 
   &:focus,
   &:hover {
-    background-color: #faf4ea;
-    color: #31261a;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
     border: 1px solid black;
   }
 `;

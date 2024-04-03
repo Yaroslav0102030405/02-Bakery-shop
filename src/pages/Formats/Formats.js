@@ -1,5 +1,6 @@
 import React from 'react';
-import './_formats.scss';
+// import './_formats.scss';
+import './formats.css';
 // import './_carousel.scss';
 // import './_pagination.scss';
 import Carusel from '../../components/Carusel/Carusel';
