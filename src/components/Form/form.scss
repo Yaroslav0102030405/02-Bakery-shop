@@ -35,8 +35,20 @@
 
   &__terms {
     // display: none;
+    // display: block;
     font-size: 12px;
     text-align: center;
+
+    @media screen and (max-width: $tablet) {
+      display: block;
+      margin: 0 auto;
+      margin-top: 24px;
+      width: 210px;
+      // font-size: 12px;
+      // font-weight: 500;
+      // line-height: 1.5;
+      text-align: center;
+    }
 
     @media screen and (min-width: $tablet) {
       display: block;
