@@ -3,6 +3,8 @@ import './_chefs.scss';
 import ChefsMap from '../../components/ChefsMap/ChefsMap';
 import chefsjsom from './../../datajson/chefs.json';
 
+// import styled from 'styled-components';
+
 const Chefs = () => {
   return (
     <>

@@ -22,22 +22,22 @@
     text-align: center;
   }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  // &__list {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 20px;
 
-    @media screen and (min-width: $tablet) {
-      flex-direction: row;
-      gap: 60px 60px;
-    }
-  }
+  //   @media screen and (min-width: $tablet) {
+  //     flex-direction: row;
+  //     gap: 60px 60px;
+  //   }
+  // }
 
-  &__item {
-    @media screen and (min-width: $desktop) {
-      flex-basis: calc(100% - 30px / 2);
-    }
-  }
+  // &__item {
+  //   @media screen and (min-width: $desktop) {
+  //     flex-basis: calc(100% - 30px / 2);
+  //   }
+  // }
 }
 
 .chefs__title::before,
@@ -63,40 +63,40 @@
   right: -360px;
 }
 
-.chef-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+// .chef-card {
+//   display: flex;
+//   align-items: flex-start;
+//   gap: 16px;
 
-  @media screen and (min-width: $tablet) {
-    gap: 30px;
-  }
+//   @media screen and (min-width: $tablet) {
+//     gap: 30px;
+//   }
 
-  &__photo {
-    width: 140px;
-    border-radius: 4px 4px 4px 200px;
-    box-shadow:
-      -10px 10px 0 0 $color-primary-light,
-      -10px 10px 0 1px #a18268;
+// &__photo {
+//   width: 140px;
+//   border-radius: 4px 4px 4px 200px;
+//   box-shadow:
+//     -10px 10px 0 0 $color-primary-light,
+//     -10px 10px 0 1px #a18268;
 
-    @media screen and (min-width: $tablet) {
-      width: 240px;
-      box-shadow:
-        -16px 16px 0 0 $color-primary-light,
-        -16px 16px 0 1px #a18268;
-    }
-  }
+//   @media screen and (min-width: $tablet) {
+//     width: 240px;
+//     box-shadow:
+//       -16px 16px 0 0 $color-primary-light,
+//       -16px 16px 0 1px #a18268;
+//   }
+// }
 
-  &__title {
-    margin-bottom: 24px;
-    font-size: 24px;
-    font-weight: 600;
+// &__title {
+//   margin-bottom: 24px;
+//   font-size: 24px;
+//   font-weight: 600;
 
-    @media screen and (min-width: $desktop) {
-      font-size: 40px;
-    }
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     font-size: 40px;
+//   }
+// }
+// }
 
 .chef__text p {
   font-size: 14px;
