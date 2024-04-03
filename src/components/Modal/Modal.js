@@ -1,6 +1,8 @@
 import React from 'react';
 import './modal.scss';
 
+// import styled from 'styled-components';
+
 const Modal = ({ active, setActive, children }) => {
   return (
     <div

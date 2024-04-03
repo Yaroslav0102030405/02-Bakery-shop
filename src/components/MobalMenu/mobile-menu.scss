@@ -1,7 +1,6 @@
 @import './../../sass/utils/variables';
 
 .menu {
-  //   padding: 15px;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
@@ -51,26 +50,25 @@
 
 .menu-btn-close:focus,
 .menu-btn-close:hover {
-  // color: aqua;
   background-color: $color-brand-light;
 }
 
-.mobile__link {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
+// .mobile__link {
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 16px;
 
-  font-size: 14px;
-  font-weight: 300;
-  text-decoration: none;
-  color: #31261a;
-}
+//   font-size: 14px;
+//   font-weight: 300;
+//   text-decoration: none;
+//   color: #31261a;
+// }
 
-.mobile__link:hover {
-  color: $color-brand-light;
-}
+// .mobile__link:hover {
+//   color: $color-brand-light;
+// }
 
-.mobile__image {
-  margin-top: 215px;
-  margin-left: auto;
-}
+// .mobile__image {
+//   margin-top: 215px;
+//   margin-left: auto;
+// }

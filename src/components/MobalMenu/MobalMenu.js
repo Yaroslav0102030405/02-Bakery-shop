@@ -4,6 +4,28 @@ import { ReactComponent as IconClose } from './../../Icons/icon-close.svg';
 import Logo from '../Logo/Logo';
 import MobileImage from './../../images/mbadvn.png';
 
+import styled from 'styled-components';
+
+const MobileLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #31261a;
+
+  &:hover {
+    color: #819b57;
+  }
+`;
+
+const Image = styled.img`
+  margin-top: 215px;
+  margin-left: auto;
+`;
+
 const MobileMenu = ({ active, setMenuActive }) => {
   return (
     <>
@@ -28,44 +50,31 @@ const MobileMenu = ({ active, setMenuActive }) => {
           <Logo />
           <ul className="mobile">
             <li>
-              <a
-                className="mobile__link"
+              <MobileLink
                 href="#traditions"
                 onClick={() => setMenuActive(false)}
                 // onClick={() => setActive(true)}
               >
                 Наші традиції
-              </a>
+              </MobileLink>
             </li>
             <li>
-              <a
-                className="mobile__link"
-                href="#chefs"
-                onClick={() => setMenuActive(false)}
-              >
+              <MobileLink href="#chefs" onClick={() => setMenuActive(false)}>
                 Шеф-кухарі
-              </a>
+              </MobileLink>
             </li>
             <li>
-              <a
-                className="mobile__link"
-                href="#formats"
-                onClick={() => setMenuActive(false)}
-              >
+              <MobileLink href="#formats" onClick={() => setMenuActive(false)}>
                 Формати
-              </a>
+              </MobileLink>
             </li>
             <li>
-              <a
-                className="mobile__link"
-                href="#contact"
-                onClick={() => setMenuActive(false)}
-              >
+              <MobileLink href="#contact" onClick={() => setMenuActive(false)}>
                 Контакти
-              </a>
+              </MobileLink>
             </li>
           </ul>
-          <img className="mobile__image" src={MobileImage} />
+          <Image src={MobileImage} />
         </div>
       </div>
     </>

@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/components/Carusel/carusel.scss"],"names":[],"mappings":"AAAA,KACE,UAAA,CACA,aAAA,CAGF,iBACE,aAAA,CAEF,YACE,cAAA,CAGF,kBACE,UAAA,CACA,WAAA,CACA,mBAAA,CAAA,gBAAA,CAeF,sCACE,UAAA,CACA,6CAAA,CAGF,sCACE,UAAA,CACA,6CAAA","file":"carusel.min.css"}
+{"version":3,"sources":["../src/components/Carusel/carusel.scss"],"names":[],"mappings":"AAOA,iBACE,aAAA,CAEF,YACE,cAAA,CASF,sCACE,UAAA,CACA,6CAAA,CAGF,sCACE,UAAA,CACA,6CAAA","file":"carusel.min.css"}

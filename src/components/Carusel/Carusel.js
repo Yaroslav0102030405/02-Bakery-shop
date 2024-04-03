@@ -9,7 +9,7 @@ import image1 from './../../images/carusel1.jpg';
 import image2 from './../../images/carusel2.jpg';
 import image3 from './../../images/carusel3.jpg';
 
-// import Slider from 'react-slick';
+import styled from 'styled-components';
 
 const Carusel = () => {
   var settings = {
@@ -47,101 +47,42 @@ const Carusel = () => {
       },
     ],
   };
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 2,
-  //   initialSlide: 0,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         centerPadding: '10px',
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-  //     dots: true,
-  //     infinite: true,
-  //     speed: 500,
-  //     slidesToShow: 3,
-  //     slidesToScroll: 3,
-  //     responsive: [
-  //       {
-  //         breakpoint: 1024,
-  //         settings: {
-  //           slidesToShow: 3,
-  //           slidesToScroll: 3,
-  //           infinite: true,
-  //           dots: true,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 600,
-  //         settings: {
-  //           slidesToShow: 2,
-  //           slidesToScroll: 2,
-  //           initialSlide: 2,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 480,
-  //         settings: {
-  //           slidesToShow: 1,
-  //           slidesToScroll: 1,
-  //         },
-  //       },
-  //     ],
-  //   };
+
+  const App = styled.div`
+    width: 100%;
+    margin: 0 auto;
+  `;
+
+  const Image = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  `;
 
   return (
     <>
-      <div className="slider-container app">
+      <App className="slider-container ">
         <Slider {...settings}>
           <div className="slider__item">
-            <img src={image1} alt="" width="349"></img>
-            {/* <h3>1</h3> */}
+            <Image src={image1} alt="" width="349"></Image>
           </div>
           <div className="slider__item">
-            <img src={image2} alt="" width="349"></img>
-            {/* <h3>2</h3> */}
+            <Image src={image2} alt="" width="349"></Image>
           </div>
           <div className="slider__item">
-            <img src={image3} alt="" width="349"></img>
-            {/* <h3>3</h3> */}
+            <Image src={image3} alt="" width="349"></Image>
           </div>
           <div className="slider__item">
-            <img src={image1} alt="" width="349"></img>
-            {/* <h3>4</h3> */}
+            <Image src={image1} alt="" width="349"></Image>
           </div>
           <div className="slider__item">
-            <img src={image2} alt="" width="349"></img>
-            {/* <h3>5</h3> */}
+            <Image src={image2} alt="" width="349"></Image>
           </div>
           <div className="slider__item">
-            <img src={image3} alt="" width="349"></img>
-            {/* <h3>6</h3> */}
+            <Image src={image3} alt="" width="349"></Image>
           </div>
-          {/* <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-          <div>
-            <h3>9</h3>
-          </div> */}
         </Slider>
-      </div>
+      </App>
     </>
   );
 };
