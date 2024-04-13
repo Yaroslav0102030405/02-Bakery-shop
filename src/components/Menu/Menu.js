@@ -29,16 +29,24 @@ const Menu = ({ props }) => {
     <>
       <List>
         <li>
-          <Link href="#traditions">Наші традиції</Link>
+          <Link href="#traditions" aria-label="go to section tradition">
+            Наші традиції
+          </Link>
         </li>
         <li>
-          <Link href="#chefs">Шеф-кухарі</Link>
+          <Link href="#chefs" aria-label="go to section chefs">
+            Шеф-кухарі
+          </Link>
         </li>
         <li>
-          <Link href="#formats">Формати</Link>
+          <Link href="#formats" aria-label="go to section formats">
+            Формати
+          </Link>
         </li>
         <li>
-          <Link href="#contact">Контакти</Link>
+          <Link href="#contact" aria-label="go to section contact">
+            Контакти
+          </Link>
         </li>
       </List>
     </>

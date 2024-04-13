@@ -52,7 +52,7 @@ const Header = () => {
         <div className="container">
           <HeaderContainer>
             <Logo />
-            <HeaderNav>
+            <HeaderNav aria-label="main navigation">
               <Menu props={menujsons} />
             </HeaderNav>
 

@@ -64,22 +64,22 @@ const Carusel = () => {
       <App className="slider-container ">
         <Slider {...settings}>
           <div className="slider__item">
-            <Image src={image1} alt="" width="349"></Image>
+            <Image src={image1} alt="photo1" width="349"></Image>
           </div>
           <div className="slider__item">
-            <Image src={image2} alt="" width="349"></Image>
+            <Image src={image2} alt="photo2" width="349"></Image>
           </div>
           <div className="slider__item">
-            <Image src={image3} alt="" width="349"></Image>
+            <Image src={image3} alt="photo3" width="349"></Image>
           </div>
           <div className="slider__item">
-            <Image src={image1} alt="" width="349"></Image>
+            <Image src={image1} alt="photo4" width="349"></Image>
           </div>
           <div className="slider__item">
-            <Image src={image2} alt="" width="349"></Image>
+            <Image src={image2} alt="photo5" width="349"></Image>
           </div>
           <div className="slider__item">
-            <Image src={image3} alt="" width="349"></Image>
+            <Image src={image3} alt="photo6" width="349"></Image>
           </div>
         </Slider>
       </App>

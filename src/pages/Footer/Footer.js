@@ -134,32 +134,47 @@ const Footer = () => {
             <Logo />
             <ul className="footer-menu">
               <li>
-                <Link href="#traditions">Наші традиції</Link>
+                <Link href="#traditions" aria-label="go to section tradition">
+                  Наші традиції
+                </Link>
               </li>
               <li>
-                <Link href="#chefs">Шеф-кухарі</Link>
+                <Link href="#chefs" aria-label="go to section chefs">
+                  Шеф-кухарі
+                </Link>
               </li>
               <li>
-                <Link href="#formats">Формати</Link>
+                <Link href="#formats" aria-label="go to section formats">
+                  Формати
+                </Link>
               </li>
               <li>
-                <Link href="#contact">Контакти</Link>
+                <Link href="#contact" aria-label="go to section contact">
+                  Контакти
+                </Link>
               </li>
             </ul>
             <address>
               <ul>
                 <AddressItem>
-                  <AddressLink href="tel:+380960000007">
+                  <AddressLink
+                    href="tel:+380960000007"
+                    aria-label="link number"
+                  >
                     + 38 (096) 000 00 07
                   </AddressLink>
                 </AddressItem>
                 <AddressItem>
-                  <AddressLink href="mailto:shopbakery@gmail.com">
+                  <AddressLink
+                    href="mailto:shopbakery@gmail.com"
+                    aria-label="link email"
+                  >
                     shopbakery@gmail.com
                   </AddressLink>
                 </AddressItem>
                 <AddressItem>
                   <AddressLink
+                    aria-label="link map"
                     href="https://maps.app.goo.gl/SvD66bGZupn16T4t5"
                     target="_blank"
                     rel="noreferrer"
@@ -172,14 +187,14 @@ const Footer = () => {
               </ul>
               <FooterSocial>
                 <Item>
-                  <AddressIcon href="#">
+                  <AddressIcon href="#" aria-label="link to faccebook">
                     <svg width="32" height="32">
                       <use href="./images/icons-svg.svg#icon-facebook"></use>
                     </svg>
                   </AddressIcon>
                 </Item>
                 <li>
-                  <AddressIcon href="#">
+                  <AddressIcon href="#" aria-label="link to instagram">
                     <svg width="32" height="32">
                       <use href="./images/icons-svg.svg#icon-instagram"></use>
                     </svg>
@@ -189,7 +204,11 @@ const Footer = () => {
             </address>
 
             <div className="footer__end">
-              <AddressLink href="#" target="_blank">
+              <AddressLink
+                href="#"
+                target="_blank"
+                aria-label="link to security policy"
+              >
                 Політика конфіденційності
               </AddressLink>
               <AddressCopyright>&copy; 2022 Дані захищені</AddressCopyright>

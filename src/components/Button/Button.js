@@ -28,6 +28,7 @@ const Button = () => {
   return (
     <>
       <HeroButton
+        aria-label="button open"
         className="hero__button open-btn"
         type="button"
         onClick={() => setModalActive(true)}
@@ -38,6 +39,7 @@ const Button = () => {
         {/* <div class="backdrop is-hidden">
           <div class="modal"> */}
         <button
+          aria-label="button close"
           className="modal-btn-close"
           type="button"
           onClick={() => setModalActive(false)}
@@ -94,13 +96,17 @@ const Button = () => {
             />
           </div>
 
-          <button className="button form__button" type="submit">
+          <button
+            className="button form__button"
+            type="submit"
+            aria-label="button submit"
+          >
             Відправити
           </button>
 
           <p className="form__terms">
             Натискаючи на кнопку я погоджуюсь з
-            <a className="form__link" href="#">
+            <a className="form__link" href="#" aria-label="link">
               політикою конфіденційності
             </a>
           </p>
