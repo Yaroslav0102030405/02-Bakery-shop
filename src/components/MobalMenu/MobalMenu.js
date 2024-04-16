@@ -45,7 +45,7 @@ const MobileMenu = ({ active, setMenuActive }) => {
             // onClick={() => setActive(false)}
             onClick={() => setMenuActive(false)}
           >
-            <IconClose />
+            <IconClose className="IconClose" />
           </button>
           <Logo />
           <ul className="mobile">

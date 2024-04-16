@@ -63,6 +63,7 @@
 }
 
 .form__link {
+  display: block;
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
   margin-left: 6px;
