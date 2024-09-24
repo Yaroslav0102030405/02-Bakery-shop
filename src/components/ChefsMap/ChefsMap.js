@@ -1,6 +1,6 @@
 import React from 'react';
-// import ImageNastya from './../../images/nastya-shef.jpg';
-// import ImageVlad from './../../images/vlad-chef.jpg';
+import ImageNastya from './../../images/nastya-shef.jpg';
+import ImageVlad from './../../images/vlad-chef.jpg';
 
 import styled from 'styled-components';
 
@@ -64,9 +64,9 @@ const ChefsMap = ({ props }) => {
           <Item key={title}>
             <ChefCard>
               <Photo
-                // srcSet={ImageNastya}
+                srcSet={ImageNastya}
                 // src="./images/nastya-shef.jpg"
-                src={image}
+                // src={ImageNastya}
                 alt="Nastya-chef"
               />
               <div>
